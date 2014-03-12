@@ -6,7 +6,7 @@
   var group = [];
 
   var container,overlay;
-  var containerHeight, containerWidth, windowHeight = $(window).height(), windowWidth = $(window).width();
+  var containerHeight, containerWidth, windowHeight = $(window).outerHeight(), windowWidth = $(window).outerWidth();
 
   var index, nextIndex, prevIndex;
 
@@ -371,12 +371,12 @@ function fitContent(obj) {
 
 function center_overlay(){
   container = $('div.jlightbox-container');
-  containerWidth = container.width();
-  containerHeight = container.height();
+  containerWidth = container.outerWidth();
+  containerHeight = container.outerHeight();
 
   if(settings.modal){
-    overlay.width($(document).width());
-    overlay.height($(document).height());
+    overlay.width($(document).outerWidth());
+    overlay.height($(document).outerHeight());
   }
 
   container.css({
@@ -453,7 +453,7 @@ $.fn.jlightbox.defaults = {
   vimeo_embed_url: 'http://player.vimeo.com/video/{video_id}?title=0&byline=0&portrait=0',
   width: 500,
   height: 344,
-  img_loading: 'assets/img/loading.gif',
+  img_loading: 'images/loading.gif',
   btn_close: true,
   pagination: true,
   height_controls: 60,
