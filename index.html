@@ -1,103 +1,62 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>jlightbox - A jQuery lightbox plugin</title>
-  <meta name="description" content="jlightbox - A jQuery lightbox plugin">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" CONTENT="plugin,jquery,lightbox">
-  <meta name="copyright" content="www.agenciakreato.com" />
-  <meta name="author" content="contato@agenciakreato.com" />
-  <meta name="rating" content="geral,general" />
-  <meta name="googlebot" content="index,follow" />
-  <meta name="Publisher" content="Agência Kreato" />
-  <meta name="Publisher-Email" content="contato@agenciakreato.com" />
-  <meta http-equiv="content-language" content="pt-br"> 
-  <meta name="robots" CONTENT="index,follow">
+<html>
 
-  <link rel="shortcut icon" type="image/x-icon" href="http://www.agenciakreato.com/assets/favicon.ico">
-  <link rel="icon" type="image/png" href="http://www.agenciakreato.com/assets/favicon.png">
-  <link rel="address bar icon" href="http://www.agenciakreato.com/assets/favicon.ico">
-  <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.agenciakreato.com/assets/favicon.ico">
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jlightbox : A jQuery lightbox plugin" />
 
-  <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/github.css">
-  <link rel="stylesheet" href="./assets/css/jlightbox.jquery.css">
-  <script src="./assets/js/modernizr-2.6.2.min.js"></script>
-</head>
-<body>
- <header>
-   <div class="container">
-     <a href="http://www.agenciakreato.com/"><h1>jlightbox</h1></a>
-   </div>
- </header>
- <main>
-   <div class="container">
-     <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="col-md-6">
-          <a href="http://www.youtube.com/embed/sS5vwK3ZO5U" class="jlightbox" rel="galeriavideos">Youtube</a>
-          <a href="http://www.youtube.com/embed/oofSnsGkops" class="jlightbox" rel="galeriavideos">Youtube</a>
-          <a href="http://vimeo.com/88279730" class="jlightbox" rel="galeriavideos">Vimeo</a>
-          <a href="assets/img/example/example_1.jpg" class="jlightbox" rel="galeriaimages">Imagem 1</a>
-          <a href="assets/img/example/example_2.jpg" class="jlightbox" rel="galeriaimages">Imagem 2</a>
-          <a href="assets/img/example/example_3.jpg" class="jlightbox" rel="galeriaimages">Image 3</a>
-          <a href="#div-inline" class="jlightbox" rel="inline">Inline 1</a>
-          <a href="#div-inline2" class="jlightbox" rel="inline">Inline 2</a>
-          <div style="display: none">
-            <div id="div-inline">Hello</div>
-            <div id="div-inline2">Are you okay?</div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">Support this project. Donate $1. :)</div>
-            <div class="panel-body">
-              <p>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                  <input type="hidden" name="cmd" value="_donations">
-                  <input type="hidden" name="business" value="leandrolopes.java@gmail.com">
-                  <input type="hidden" name="lc" value="US">
-                  <input type="hidden" name="item_number" value="jlightbox">
-                  <input type="hidden" name="no_note" value="0">
-                  <input type="hidden" name="currency_code" value="USD">
-                  <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="panel panel-default">
-          <div class="panel-heading">Code</div>
-          <div class="panel-body">
-            <pre>
-              <code>
-                $('a.jlightbox').jlightbox();
-              </code>
-            </pre>
-          </div>
-        </div>
-      </div>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jlightbox</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/leandrolopes13/jlightbox">View on GitHub</a>
+
+          <h1 id="project_title">Jlightbox</h1>
+          <h2 id="project_tagline">A jQuery lightbox plugin</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/leandrolopes13/jlightbox/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/leandrolopes13/jlightbox/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
 
-  </div>
-</main>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="jlightbox" class="anchor" href="#jlightbox"><span class="octicon octicon-link"></span></a>jlightbox</h1>
 
-<footer>
-</footer>
-<script src="./assets/js/jquery-1.10.2.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/jlightbox.jquery.js"></script>
-<script src="./assets/js/jquery.easing.1.3.js"></script>
-<script src="./assets/js/main.js"></script>
-</body>
+<p>A jQuery lightbox plugin</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jlightbox maintained by <a href="https://github.com/leandrolopes13">leandrolopes13</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-47212411-7");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
 </html>
